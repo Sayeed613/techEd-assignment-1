@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import PersonalInfo from '../components/PersonalInfo';
 import BioSection from '../components/BioSection';
@@ -15,12 +15,12 @@ const ProfilePage = () => {
       <Sidebar selectedSection={selectedSection} setSelectedSection={setSelectedSection} />
       <div className="flex-grow p-6  ">
         {selectedSection === 'Profile' && (
-          <>
+          <div>
             <PersonalInfo />
             <BioSection />
             <LanguageSection />
             <SocialMediaSection />
-          </>
+          </div>
         )}
         <EducationSection />
          <WorkExperienceSection />
